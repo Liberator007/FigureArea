@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FigureAreaLibrary</id>
+    <version>1.0.0</version>
+    <authors>FigureAreaLibrary</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Антон\Desktop\FigureArea\FigureAreaConsole\FigureAreaLibrary\bin\Debug\net7.0\FigureAreaLibrary.dll" target="lib\net7.0\FigureAreaLibrary.dll" />
+  </files>
+</package>
