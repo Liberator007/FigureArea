@@ -20,7 +20,7 @@ namespace FigureAreaTest
             circleTest = new Circle();
         }
 
-        // Создание класса типа Circle при одном введенном параметре (радиусе)
+        // РЎРѕР·РґР°РЅРёРµ РєР»Р°СЃСЃР° С‚РёРїР° Circle РїСЂРё РѕРґРЅРѕРј РІРІРµРґРµРЅРЅРѕРј РїР°СЂР°РјРµС‚СЂРµ (СЂР°РґРёСѓСЃРµ)
         [TestMethod()]
         public void CreateCircleTest()
         {
@@ -29,18 +29,18 @@ namespace FigureAreaTest
             Assert.AreEqual(circle.GetType().Name, actual);
         }
 
-        // Вычисление площади круга
+        // Р’С‹С‡РёСЃР»РµРЅРёРµ РїР»РѕС‰Р°РґРё РєСЂСѓРіР°
         [TestMethod]
         public void AreaTest()
         {
             double expected = Math.PI * Math.Pow(radius, 2);
             circleTest.SetParams(radius);
             double actual = circleTest.Area();
-            Assert.AreEqual(expected, actual, "Площадь круга с радиусом {0} должна быть равна {1}", radius, expected);
+            Assert.AreEqual(expected, actual, "РџР»РѕС‰Р°РґСЊ РєСЂСѓРіР° СЃ СЂР°РґРёСѓСЃРѕРј {0} РґРѕР»Р¶РЅР° Р±С‹С‚СЊ СЂР°РІРЅР° {1}", radius, expected);
         }
 
-        // Вычисление типа фигуры
-        // А также вывод типа фигуры (круга) через свойство Name
+        // Р’С‹С‡РёСЃР»РµРЅРёРµ С‚РёРїР° С„РёРіСѓСЂС‹
+        // Рђ С‚Р°РєР¶Рµ РІС‹РІРѕРґ С‚РёРїР° С„РёРіСѓСЂС‹ (РєСЂСѓРіР°) С‡РµСЂРµР· СЃРІРѕР№СЃС‚РІРѕ Name
         [TestMethod()]
         public void TypeFigureTest()
         {
@@ -50,7 +50,7 @@ namespace FigureAreaTest
             Assert.AreEqual(expected, actual);
         }
 
-        // Установка корректного радиуса круга
+        // РЈСЃС‚Р°РЅРѕРІРєР° РєРѕСЂСЂРµРєС‚РЅРѕРіРѕ СЂР°РґРёСѓСЃР° РєСЂСѓРіР°
         [TestMethod()]
         public void SetCorrectParamsTest()
         {
@@ -59,8 +59,8 @@ namespace FigureAreaTest
             Assert.AreEqual(expected, actual);
         }
 
-        // Установка радиуса круга с отрицательным значением
-        // (невозможность существования данного круга)
+        // РЈСЃС‚Р°РЅРѕРІРєР° СЂР°РґРёСѓСЃР° РєСЂСѓРіР° СЃ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј Р·РЅР°С‡РµРЅРёРµРј
+        // (РЅРµРІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ РґР°РЅРЅРѕРіРѕ РєСЂСѓРіР°)
         [TestMethod()]
         public void SetNegativeParamsTest()
         {
@@ -69,8 +69,8 @@ namespace FigureAreaTest
             Assert.AreEqual(expected, actual);
         }
 
-        // Установка параметров круга с 2 переменными (сторонами)
-        // (невозможность существования круга)
+        // РЈСЃС‚Р°РЅРѕРІРєР° РїР°СЂР°РјРµС‚СЂРѕРІ РєСЂСѓРіР° СЃ 2 РїРµСЂРµРјРµРЅРЅС‹РјРё (СЃС‚РѕСЂРѕРЅР°РјРё)
+        // (РЅРµРІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ РєСЂСѓРіР°)
         [TestMethod()]
         public void SetLargeNumberOfParamsTest()
         {
